@@ -1,0 +1,57 @@
+#menu h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.item {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;
+
+    border: 1px solid var(--yellow);
+    border-radius: 8px;
+    box-shadow: 6px 6px 4px #ffb20025;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    margin-bottom: 8spx;
+}
+
+.item span {
+    font-weight: 300;
+}
+
+.item ul {
+    flex: 1;
+    margin-left: 24px;
+    font-weight: 300;
+}
+
+.item button {
+    min-width: 100%
+}
+
+.item:hover{
+    transform: scale(1.03);
+}

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+
+:root {
+    --purple: #1a002f;
+    --yellow: #ffb200;
+    --white: #ffffff;
+
+    scroll-behavior: smooth;
+    --webkit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    background-color: var(--purple);
+    color: var(--white);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header img {
+    width: 64px;
+    object-fit: cover;
+}
+
+header nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    width: 100px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+nav a:hover {
+    color: var(--yellow);
+}
+
+nav a.active {
+    color: var(--yellow);
+}
+
+button {
+    color: var(--purple);
+    background-color: var(--yellow);
+    border: none;
+    padding: 8px 12px;
+    min-width: 50px;
+    max-width: 200px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button i {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+main {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px 0;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--yellow);
+}
+
+footer .container {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    color: var(--purple);
+}
+
+footer .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+footer .container div img {
+    width: 94px;
+    object-fit: cover;
+}
+
+footer .container div a {
+     color: var(--purple)
+}
